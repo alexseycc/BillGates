@@ -38,17 +38,18 @@
      tabuada(document.getElementById('numi').value);
       
     }
+    
   
   </script>
 
   <body style="background:rgba(123,210,123,.4)">
   <fieldset>Soma de dois numeros<br>
   num a<input id="numa" type="text" placeholder="numA"/>
-  num b<input id="numb" type="text" placeholder="numB"  onkeypress="soma();"/>
+  num b<input id="numb" type="text" placeholder="numB"  onkeypress="javascript:if (event.keyCode==13) soma();"/>
   <input type="button" value="somar" onclick="soma();"></inp>  
   </fieldset><br>
   <fieldset>tabuada da multiplicação<br>
-  num a<input id="numi" type="text" placeholder="numI"/>
+  num a<input id="numi" type="text" placeholder="numI" onkeypress="javascript:if (event.keyCode==13) tabuada(document.getElementById('numi').value);"/>
   <input type="button" value="tabuadaMaluca" onclick="tabuada(document.getElementById('numi').value)" </input>
   </fieldset>
   

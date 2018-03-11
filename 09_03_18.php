@@ -44,7 +44,7 @@
   <body style="background:rgba(123,210,123,.4)">
   <fieldset>Soma de dois numeros<br>
   num a<input id="numa" type="text" placeholder="numA"/>
-  num b<input id="numb" type="text" placeholder="numB"/>
+  num b<input id="numb" type="text" placeholder="numB"  onkeypress="soma();"/>
   <input type="button" value="somar" onclick="soma();"></inp>  
   </fieldset><br>
   <fieldset>tabuada da multiplicação<br>

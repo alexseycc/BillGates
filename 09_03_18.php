@@ -39,17 +39,20 @@
       
     }
     
-    function mt(i){
-      //var x=[];
+    function mt(){
+      var x=[];
      // x.push(i);
-      //document.write("<li id="+limit+"/>");
-      alert(i);
+      //document.write("<li id="+limit+"/>");document.getElementById(0).value
+      for(i=0;i<10;i++){
+        x.push(document.getElementById(i).value);
+      document.write(x[i].toString());
+      }
     }
     
     function escrever(){
       for(i=0;i<10;i++)
       document.write("<input type='text' id='"+i+"' />");
-     document.write("<input type='button' value='ordenar' onclick='mt(document.getElementById(0).value)' style='width:300px' />");
+     document.write("<input type='button' value='ordenar' onclick='mt()' style='width:300px' />");
      
     }
   

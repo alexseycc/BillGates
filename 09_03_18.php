@@ -41,17 +41,16 @@
     
     function mt(){
       var x=[];
-     // x.push(i);
-      //document.write("<li id="+limit+"/>");document.getElementById(0).value
       for(i=0;i<10;i++){
         x.push(document.getElementById(i).value);
-      document.write(x[i].toString());
       }
+    alert(x.sort());
+      
     }
     
     function escrever(){
       for(i=0;i<10;i++)
-      document.write("<input type='text' id='"+i+"' />");
+      document.write("<input type='text' id='"+i+"' onkeypress='javascript:if (event.keyCode==13) mt();' />");
      document.write("<input type='button' value='ordenar' onclick='mt()' style='width:300px' />");
      
     }
@@ -72,7 +71,7 @@
     </p>
   <script>
     escrever();
-</script> 
+  </script> 
  
   
   </fieldset>

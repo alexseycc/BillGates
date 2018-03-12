@@ -39,6 +39,14 @@
       
     }
     
+    function mt(){
+  limit=100-90;
+      //var x=[];
+      //x.push(i);
+      for(i=0;i<limit;limit++)
+      document.write("<li id="+limit+"/>");
+     // alert(limit);
+    }
   
   </script>
 
@@ -51,6 +59,28 @@
   <fieldset>tabuada da multiplicação<br>
   num a<input id="numi" type="text" placeholder="numI" onkeypress="javascript:if (event.keyCode==13) tabuada(document.getElementById('numi').value);"/>
   <input type="button" value="tabuadaMaluca" onclick="tabuada(document.getElementById('numi').value)" </input>
+  </fieldset><br>
+  <fieldset>Array
+  num a<input id="ar1" type="text" placeholder="array" onkeypress="javascript:if (event.keyCode==13) mt(document.getElementById('ar1').value);"/>
+  <input type="button" value="add" onclick="mt(document.getElementById('ar1').value)" </input>
+  <input type="button" value="ordenar" onclick="mt(document.getElementById('ar1').value)" </input>
+  <!--
+    <ul>
+    <li id="1"></li>
+    <li id="2"></li>
+    <li id="3"></li>
+    <li id="4"></li>
+    <li id="5"></li>
+    <li id="6"></li>
+    <li id="7"></li>
+    <li id="8"></li>
+    <li id="9"></li>
+    <li></li>
+  </ul>
+-->
+    <script>
+    mt();
+    </script>
   </fieldset>
   
 <p id="tabb" style="visibility:hidden";>

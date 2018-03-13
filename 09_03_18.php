@@ -54,7 +54,21 @@
      document.write("<input type='button' value='ordenar' onclick='mt()' style='width:300px' />");
      
     }
-  
+    
+  function eleitor(){
+    
+    
+  }
+    
+    
+    function menu(){
+      for(i=0;i<2;i++)
+      document.write("<input type='text' id='menu"+i+"' onkeypress='javascript:if (event.keyCode==13) mt();' /><br>");
+      for(i=0;i<3;i++)
+       document.write("<input type='button' value='ordenar' onclick='mt()' style='width:300px' />");
+    
+      
+    }
   </script>
 
   <body style="background:rgba(123,210,123,.4)">
@@ -71,6 +85,14 @@
     </p>
   <script>
     escrever();
+  </script> 
+ 
+ 
+  </fieldset><br>
+<fieldset>MenuOpções
+    </p>
+  <script>
+    menu();
   </script> 
  
  

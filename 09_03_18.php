@@ -64,10 +64,21 @@
     function menu(){
       for(i=0;i<2;i++)
       document.write("<input type='text' id='menu"+i+"' onkeypress='javascript:if (event.keyCode==13) mt();' />valor"+(i+1)+"<br>");
-      for(i=0;i<3;i++)
-       document.write("<input type='button' value='ordenar' onclick='mt()' style='width:100px' />");
-    
-      
+      for(i=1;i<=4;i++){
+        switch(i){
+          case 1:
+       document.write("<input type='button' value='Somar' onclick='mt()' style='width:100px' />");
+      break;
+          case 2:
+       document.write("<input type='button' value='Subtrair' onclick='mt()' style='width:100px' />");
+      break;
+          case 3:
+       document.write("<input type='button' value='Multiplicar' onclick='mt()' style='width:100px' />");
+    break;
+          case 4:
+       document.write("<input type='button' value='Dividir' onclick='mt()' style='width:100px' />");
+    break;
+        }}
     }
   </script>
 

@@ -60,23 +60,46 @@
     
   }
     
+  function mat(i){
+    //alert(document.getElementById('menu1').value);
+    //alert(document.getElementById('menu1').id);
+    switch(i){
+        //mat(i,document.getElementById('menu1').value,document.getElementById('menu2').value);
+      case 1:
+        var z=parseFloat(document.getElementById('menu1').value)+parseFloat(document.getElementById('menu2').value);
+        alert("A soma dos valores é:"+z);
+        break;
+        case 2:
+        var z=parseFloat(document.getElementById('menu1').value)-parseFloat(document.getElementById('menu2').value);
+        alert("A subtração dos valores é:"+z);
+        break;
+        case 3:
+        var z=parseFloat(document.getElementById('menu1').value)*parseFloat(document.getElementById('menu2').value);
+        alert("O produto dos valores é:"+z);
+        break;
+        case 4:
+        var z=parseFloat(document.getElementById('menu1').value)/parseFloat(document.getElementById('menu2').value);
+        alert("A divisão dos valores é:"+z);
+        break;
+    }
     
+  }  
     function menu(){
-      for(i=0;i<2;i++)
-      document.write("<input type='text' id='menu"+i+"' onkeypress='javascript:if (event.keyCode==13) mt();' />valor"+(i+1)+"<br>");
+      for(i=1;i<=2;i++)
+      document.write("<input type='text' id='menu"+i+"' />valor"+(i)+"<br>");
       for(i=1;i<=4;i++){
         switch(i){
           case 1:
-       document.write("<input type='button' value='Somar' onclick='mt()' style='width:100px' />");
+       document.write("<input type='button' value='Somar' onclick='mat("+i+")' style='width:100px' />");
       break;
           case 2:
-       document.write("<input type='button' value='Subtrair' onclick='mt()' style='width:100px' />");
+       document.write("<input type='button' value='Subtrair' onclick='mat("+i+","+i+","+i+");' style='width:100px' />");
       break;
           case 3:
-       document.write("<input type='button' value='Multiplicar' onclick='mt()' style='width:100px' />");
+       document.write("<input type='button' value='Multiplicar' onclick='mat("+i+","+i+","+i+")' style='width:100px' />");
     break;
           case 4:
-       document.write("<input type='button' value='Dividir' onclick='mt()' style='width:100px' />");
+       document.write("<input type='button' value='Dividir' onclick='mat("+i+","+i+","+i+")' style='width:100px' />");
     break;
         }}
     }

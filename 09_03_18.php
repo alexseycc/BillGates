@@ -104,16 +104,16 @@
       for(i=1;i<=4;i++){
         switch(i){
           case 1:
-       document.write("<input type='button' value='Somar' onclick='mat("+i+")' style='width:100px' />");
+       document.write("<input type='button' value='A-Somar' onclick='mat("+i+")' style='width:100px' />");
       break;
           case 2:
-       document.write("<input type='button' value='Subtrair' onclick='mat("+i+","+i+","+i+");' style='width:100px' />");
+       document.write("<input type='button' value='B-Subtrair' onclick='mat("+i+","+i+","+i+");' style='width:100px' />");
       break;
           case 3:
-       document.write("<input type='button' value='Multiplicar' onclick='mat("+i+","+i+","+i+")' style='width:100px' />");
+       document.write("<input type='button' value='C-Multiplicar' onclick='mat("+i+","+i+","+i+")' style='width:100px' />");
     break;
           case 4:
-       document.write("<input type='button' value='Dividir' onclick='mat("+i+","+i+","+i+")' style='width:100px' />");
+       document.write("<input type='button' value='D-Dividir' onclick='mat("+i+","+i+","+i+")' style='width:100px' />");
     break;
         }}
     }

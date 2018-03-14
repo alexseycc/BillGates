@@ -70,17 +70,31 @@
         alert("A soma dos valores é:"+z);
         break;
         case 2:
+        if(parseFloat(document.getElementById('menu2').value) > parseFloat(document.getElementById('menu1').value)){
+         alert("subtraia o maior pelo menor");  
+         document.getElementById('menu2').value=null;
+         document.getElementById('menu1').value="";
+        }
+        else{
         var z=parseFloat(document.getElementById('menu1').value)-parseFloat(document.getElementById('menu2').value);
-        alert("A subtração dos valores é:"+z);
-        break;
-        case 3:
+       alert("A subtração dos valores é:"+z);
+        }
+          break;
+          case 3:
         var z=parseFloat(document.getElementById('menu1').value)*parseFloat(document.getElementById('menu2').value);
         alert("O produto dos valores é:"+z);
         break;
         case 4:
+        if(parseFloat(document.getElementById('menu2').value) ==0){
+         alert("denominador não pode ser 0");  
+         document.getElementById('menu2').value=null;
+         document.getElementById('menu1').value="";
+        }
+        else{
         var z=parseFloat(document.getElementById('menu1').value)/parseFloat(document.getElementById('menu2').value);
         alert("A divisão dos valores é:"+z);
-        break;
+        }
+          break;
     }
     
   }  

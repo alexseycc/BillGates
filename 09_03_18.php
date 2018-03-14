@@ -62,14 +62,24 @@
    candidato[2]=["1","2"];
    for(i=0;i<2;i++){
    for(j=0;j<1;j++){
-   document.getElementById('eleitor'+(i+1)).innerHTML=candidato[i][j]+","+candidato[i+1][j]+","+candidato[i+2][j]+' <input type=button value=votar><br>';
-   document.getElementById('eleitor'+(i+2)).innerHTML=candidato[i][j+1]+","+candidato[i+1][j+1]+","+candidato[i+2][j+1]+' <input type=button value=votar><br>';
+   document.getElementById('eleitor'+(i+1)).innerHTML=candidato[i][j]+","+candidato[i+1][j]+","+candidato[i+2][j]+' <input type=button value=votar onclick=comp('+(i+1)+')><br>';
+   document.getElementById('eleitor'+(i+2)).innerHTML=candidato[i][j+1]+","+candidato[i+1][j+1]+","+candidato[i+2][j+1]+' <input type=button value=votar onclick=comp('+(i+2)+')><br>';
    
      //alert(candidato[i][j]);
    }  
    }
      
   }
+    
+    function comp(i){
+     alert("seu foi computador com sucesso");
+      if(i==1)
+       alert("candidato:josé\npartido:felicidade\ncód:1");
+        else{
+       alert("candidato:joão\npartido:esperança\ncód:2");
+      }
+    }
+    
     
   function mat(i){
     //alert(document.getElementById('menu1').value);

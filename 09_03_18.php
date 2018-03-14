@@ -56,8 +56,11 @@
     }
     
   function eleitor(){
-    
-    
+    var candidato =[
+     "jose","carlos",
+      "jose","carlos"
+    ];
+    alert(cadidato[0][0]);
   }
     
   function mat(i){
@@ -117,6 +120,15 @@
     break;
         }}
     }
+    
+    
+    function tabela_grau(){
+      var f=parseFloat(document.getElementsByName('tabela')[0].value);
+      var ff=parseInt(document.getElementById('tabela').value);
+      var c=((f-32)*5)/9;
+      document.getElementById('tabelap').innerHTML="temperatura celsio é: "+c.toFixed(2);
+      
+    }
   </script>
 
   <body style="background:rgba(123,210,123,.4)">
@@ -141,11 +153,26 @@
     </p>
   <script>
     menu();
-  </script> 
- 
- 
+   document.write("<br>");
+</script> 
   </fieldset>
+ 
+<fieldset>Eleição<script>
+   document.write("<br>");
+eleitor();
+  </script>
+</fieldset>
+
+<fieldset>GrauFahrenheit<script>
+   document.write("<br>");
+  </script>
+  <input type='text' name="tabela" id='tabela' placeholder='GrauFahrenheit' onkeypress='javascript:if (event.keyCode==13) tabela_grau();' />
+       <input type='button' value='ConverterCelsio' onclick='tabela_grau()' style='width:100px' />
+<p id="tabelap">
   
+  </p>
+</fieldset>
+
 <p id="tabb" style="visibility:visible";>
   </p>
 </body>

@@ -56,11 +56,19 @@
     }
     
   function eleitor(){
-    var candidato =[
-     "jose","carlos",
-      "jose","carlos"
-    ];
-    alert(cadidato[0][0]);
+  var candidato =[];
+   candidato[0]=["josé","joão"];
+   candidato[1]=["felicidade","esperança"];
+   candidato[2]=["1","2"];
+   for(i=0;i<2;i++){
+   for(j=0;j<1;j++){
+   document.getElementById('eleitor'+(i+1)).innerHTML=candidato[i][j]+","+candidato[i+1][j]+","+candidato[i+2][j]+' <input type=button value=votar><br>';
+   document.getElementById('eleitor'+(i+2)).innerHTML=candidato[i][j+1]+","+candidato[i+1][j+1]+","+candidato[i+2][j+1]+' <input type=button value=votar><br>';
+   
+     //alert(candidato[i][j]);
+   }  
+   }
+     
   }
     
   function mat(i){
@@ -156,10 +164,11 @@
    document.write("<br>");
 </script> 
   </fieldset>
- 
-<fieldset>Eleição<script>
-   document.write("<br>");
-eleitor();
+<fieldset>Eleição
+  <li id="eleitor1"></li>
+  <li id="eleitor2"></li>
+  <script>
+  eleitor();
   </script>
 </fieldset>
 

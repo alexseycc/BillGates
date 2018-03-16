@@ -7,7 +7,7 @@
   <script>
     var limit=100;
     //document.write(limit);
-    
+//bilGates    
       
     
     function soma(){

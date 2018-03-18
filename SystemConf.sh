@@ -1,5 +1,7 @@
 #permission denied
-sed -i '1s/^/x(){ chmod 777 -R \/home\/cabox\/workspace\n}/' /etc/bashrc
+sed -i '1s/^/x(){ chmod 777 -R \/home\/cabox\/workspace\n}\n\n/' /etc/bashrc
 
 #install sw
-sed -i '1s/^/app(){ yum install $* -y\n}/' /etc/bashrc
+sed -i '1s/^/\n\napp(){ yum install $* -y\n}\n\n/' /etc/bashrc
+
+. /etc/bashrc

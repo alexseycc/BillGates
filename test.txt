@@ -1,6 +1,0 @@
-#permission denied
-x(){
-chmod 777 -R /home/cabox/workspace}task goes here
-task goes here
-what d u think
-test

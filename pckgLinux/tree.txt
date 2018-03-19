@@ -1,0 +1,40 @@
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.sjc02.svwh.net
+ * epel: mirror.sjc02.svwh.net
+ * extras: centos.host-engine.com
+ * rpmfusion-free-updates: mirror.web-ster.com
+ * updates: mirrors.ocf.berkeley.edu
+ * webtatic: us-east.repo.webtatic.com
+Setting up Install Process
+Resolving Dependencies
+--> Running transaction check
+---> Package tree.x86_64 0:1.5.3-3.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package         Arch              Version                Repository       Size
+================================================================================
+Installing:
+ tree            x86_64            1.5.3-3.el6            base             36 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total download size: 36 k
+Installed size: 65 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : tree-1.5.3-3.el6.x86_64                                      1/1 
+  Verifying  : tree-1.5.3-3.el6.x86_64                                      1/1 
+
+Installed:
+  tree.x86_64 0:1.5.3-3.el6                                                     
+
+Complete!

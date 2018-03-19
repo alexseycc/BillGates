@@ -1,0 +1,9 @@
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.sjc02.svwh.net
+ * epel: mirror.sjc02.svwh.net
+ * extras: centos.host-engine.com
+ * updates: mirrors.ocf.berkeley.edu
+ * webtatic: us-east.repo.webtatic.com
+Setting up Install Process
+No package cmus available.

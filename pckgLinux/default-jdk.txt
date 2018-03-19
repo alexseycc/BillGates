@@ -1,0 +1,10 @@
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos.unixheads.org
+ * epel: mirror.sjc02.svwh.net
+ * extras: mirror.keystealth.org
+ * rpmfusion-free-updates: mirror.web-ster.com
+ * updates: mirror.den1.denvercolo.net
+ * webtatic: us-east.repo.webtatic.com
+Setting up Install Process
+No package default-jdk available.

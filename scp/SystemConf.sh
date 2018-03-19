@@ -6,3 +6,4 @@ sed -i '1s/^/\n\napp(){ yum install $* | tee ./pckgLinux/$*.txt\n}\n\n/' /etc/ba
 
 . /etc/bashrc
 mkdir ./pckgLinux/
+#sudo yum install java-1.7.0-openjdk.x86_64 

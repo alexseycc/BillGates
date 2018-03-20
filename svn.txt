@@ -1,1 +1,3 @@
 svn propset svn:ignore "*" folder
+svn propdel svn:ignore  . folder
+export SVN_EDITOR=vim

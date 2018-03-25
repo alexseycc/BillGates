@@ -34,7 +34,7 @@
   A maneira eficiente de alugar um carro
   <br>
   <input type="text" placeholder="nome" /><br>
-  <input id="cnh_obg" type="text" placeholder="cnh" onblur="obg()"/>
+  <input id="cnh_obg" type="text" placeholder="cnh" onblur="obg()" />
   <p>
 <form> 
 <INPUT TYPE="radio" NAME="OPCAO" VALUE="hot" CHECKED onchange="escolha(this)"> hot<br>

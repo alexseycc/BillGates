@@ -8,8 +8,8 @@ arqcont=${#arqfilter[*]}
 idgoogle=(`gd list | egrep ${arquivos[tamanhoarray-2]} | cut -d' ' -f1-5`)
 idgooglefilter=(`gd list | egrep $dt | cut -d' ' -f1-5`)
 
-
-if [ -f "a.php" -eq 0]; then
+$?=`ls *.plp`
+if [ $? == 0 ]; then
 clear
 echo existe
 else

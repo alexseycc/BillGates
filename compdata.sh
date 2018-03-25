@@ -9,7 +9,7 @@ arqfilter=(`gd list | egrep -w php. | cut -d' ' -f1-5`)
 arqcont=${#arqfilter[*]}
 
 idgoogle=`gd list | grep -w "php." | cut -d' ' -f4`
-cat $idgoogle $arq > files.txt
+echo $idgoogle $arq > files.txt
 tr " " "\n" < files.txt > file.txt 
 sort file.txt > files.txt
 uniq -u files.txt > file.txt

@@ -41,6 +41,11 @@ alert("utilizando jquery");
 <p id="mm">Click me too! <p/>
 <p id="nome" onclick="muda();">alex</p>
 <input type="text" id="txt">
+  <script>
+    $i=0;
+    document.write("<br>"+$i);  
+  </script>
+  </p>
   </body>
 </html>
 <script>

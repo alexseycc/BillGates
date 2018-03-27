@@ -1,10 +1,10 @@
 #alexsey rebouças
 dt=`date +%d_%m_%y.php`
-arquivos=(`ls *.php`);tamanhoarray=${#arquivos[*]}
-arq=`ls *.php`
+arquivos=(`ls *.php *.sh`);tamanhoarray=${#arquivos[*]}
+arq=`ls *.php *.sh`
 
-arqflt=(`gd list | egrep -w php. | cut -d' ' -f1 | sort -r`);arqcont=${#arqflt[*]}
-arqfilter=(`gd list | egrep -w php. | cut -d' ' -f4 | sort | uniq`);arqcount=${#arqfilter[@]}
+arqflt=(`gd list | egrep -w 'php.|sh.' | cut -d' ' -f1 | sort -r`);arqcont=${#arqflt[*]}
+arqfilter=(`gd list | egrep -w 'php.|sh.' | cut -d' ' -f4 | sort | uniq`);arqcount=${#arqfilter[@]}
 
 
 #for x in $(eval echo {0..$((arqcont-1))});do

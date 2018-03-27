@@ -1,11 +1,11 @@
 #atualizar arquivos no googledrive
 
 dt=`date +%d_%m_%y.php`
-arquivos=(`ls *.php`)
+arquivos=(`ls *.php *.sh`)
 arq=`ls *.php`
 tamanhoarray=${#arquivos[*]}
 
-arqfilter=(`gd list | egrep -w php. | cut -d' ' -f1-5`);arqcont=${#arqfilter[*]}
+arqfilter=(`gd list | egrep -w 'php. | sh.' | cut -d' ' -f1-5`);arqcont=${#arqfilter[*]}
 
 idgoogle=`gd list | grep -w "php." | cut -d' ' -f4`
 echo $idgoogle $arq > files.txt

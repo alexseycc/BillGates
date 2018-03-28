@@ -16,7 +16,6 @@ $("body").load("jquery_asp");
 });
   */
   
-  
 
 $(document).ready(function(){
 $(".pa").click(function(){
@@ -52,6 +51,11 @@ $("body").css("background-color","rgba(245,123,120,.4)");
 //}
 
 
+  function escreva(){
+  var $nome="alexsu";   
+    document.write("<br>"+$nome);
+    
+  }
 </script>
 </head>
 <body onload="setInterval('atualizar()',5000)">
@@ -61,9 +65,12 @@ $("body").css("background-color","rgba(245,123,120,.4)");
 <p id="mm">Click me too! <p/>
 <p id="nome" onclick="muda();" value="kaka">alex</p>
 <input type="text" id="txt">
+
   <script>
-    $i=0;
-    document.write("<br>"+$i);  
+    var $i=0;
+    document.write("<br>"+($i+1));
+    //alert(escreva());
+  escreva();
   </script>
   </p>
   </body>
@@ -72,6 +79,7 @@ $("body").css("background-color","rgba(245,123,120,.4)");
 function muda(){
   document.getElementById("nome").innerHTML="veka";
   document.getElementById("txt").value="veka";
+//  document.write("<br>llll");
 }
 
 //function atualizar(){

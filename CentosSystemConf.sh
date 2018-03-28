@@ -1,5 +1,4 @@
-#permission denied
-sed -i '1s/^/x(){ chmod 777 -R \/home\/cabox\/workspace\n}\n\n/' /etc/bashrc
+sed -i '1s/^/#permission denied\nx(){ chmod 777 -R \/home\/cabox\/workspace\n}\n\n' /etc/bashrc
 
 echo "#sw  instalation
 app(){ 

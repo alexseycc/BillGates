@@ -8,12 +8,12 @@ tar xvzf megatools-1.9.97.tar.gz
 cd megatools-1.9.97
 ./configure
 
-echo "[Login]
-Username = $*
-Password = $*
-" > ~/.megarc
+#echo "[Login]
+#Username = $*
+#Password = $*
+#" > ~/.megarc
 
-chmod 600 ~/.megarc
+#chmod 600 ~/.megarc
 
 mkdir glib-source
 cd glib-source/  
@@ -32,12 +32,12 @@ tar xvzf megatools-1.9.97.tar.gz
 cd megatools-1.9.97
 ./configure
 
-echo "[Login]
-Username = $*
-Password = $*
-" > ~/.megarc
+#echo "[Login]
+#Username = $*
+#Password = $*
+#" > ~/.megarc
 
-chmod 600 ~/.megarc
+#chmod 600 ~/.megarc
 
 mkdir glib-source
 cd glib-source/  

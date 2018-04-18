@@ -2,7 +2,7 @@
 
 
 case $1 in
-debian || ubuntu)
+debian|ubuntu)
 echo "
 #atualizacso sw
 up(){
@@ -27,7 +27,6 @@ apt-get install $* | tee ./pckgLinux/$*.txt
 . /etc/bash.bashrc
 ;;
 centos)
-debian || ubuntu)
 echo "
 #atualizacso sw
 up(){
@@ -53,7 +52,7 @@ yum install $* | tee ./pckgLinux/$*.txt
 ;;
 
 
-if [ -f pckgLinux ]; then
+if [ -d pckgLinux ]; then
 mkdir ./pckgLinux/
 fi
 #sudo yum install java-1.7.0-openjdk.x86_64 

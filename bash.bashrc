@@ -1,3 +1,14 @@
+
+#permission denied
+x(){ 
+chmod 777 -R /home/cabox/workspace
+}
+
+#sw  instalation
+app(){ 
+yum install  | tee ./pckgLinux/.txt
+}
+
 # System-wide .bashrc file for interactive bash(1) shells.
 
 # To enable the settings / commands in this file for login shells as well,
@@ -22,7 +33,7 @@ PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 # If this is an xterm set the title to user@host:dir
 #case "$TERM" in
 #xterm*|rxvt*)
-#    PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
+#    PROMPT_COMMAND='echo -ne "]0;${USER}@${HOSTNAME}: ${PWD}"'
 #    ;;
 #*)
 #    ;;
@@ -61,11 +72,11 @@ if [ -x /usr/lib/command-not-found -o -x /usr/share/command-not-found/command-no
 		   /usr/share/command-not-found/command-not-found -- "$1"
                    return $?
 		else
-		   printf "%s: command not found\n" "$1" >&2
+		   printf "%s: command not found
+" "$1" >&2
 		   return 127
 		fi
 	}
 fi
 
 export PATH
-

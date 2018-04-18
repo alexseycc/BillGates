@@ -47,7 +47,7 @@ app(){
 yum install $* | tee ./pckgLinux/$*.txt
 }
 
-`cat /etc/bash.bashrc`" > /etc/bashrc
+`cat /etc/bashrc`" > /etc/bashrc
 . /etc/bashrc
 ;;
 

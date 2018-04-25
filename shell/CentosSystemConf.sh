@@ -20,7 +20,7 @@ chmod 777 -R /home/cabox/workspace
 
 #sw  instalation
 app(){ 
-apt-get install $* | tee ./pckgLinux/$*.txt
+apt-get install $* -y | tee ./pckgLinux/$*.txt
 }
 
 `cat /etc/bash.bashrc`" > /etc/bash.bashrc
@@ -44,13 +44,13 @@ chmod 777 -R /home/cabox/workspace
 
 #sw  instalation
 app(){ 
-yum install $* | tee ./pckgLinux/$*.txt
+yum install $* -y | tee ./pckgLinux/$*.txt
 }
 
 `cat /etc/bashrc`" > /etc/bashrc
 . /etc/bashrc
 ;;
-
+esac
 
 if [ -d pckgLinux ]; then
 mkdir ./pckgLinux/

@@ -1,0 +1,11 @@
+sudo apt-get update
+sudo apt-get install libfuse-dev makeself libwxbase3.0-0
+
+cd ~
+mkdir veracryptfiles
+cd veracryptfiles
+wget -L -O veracrypt-1.19-raspbian-setup.tar.bz2 https://launchpad.net/veracrypt/trunk/1.19/+download/veracrypt-1.19-raspbian-setup.tar.bz2
+tar -vxjf ./veracrypt-1.19-raspbian-setup.tar.bz2
+chmod +x veracrypt-1.19-setup-*
+
+./veracrypt-1.19-setup-console-armv7

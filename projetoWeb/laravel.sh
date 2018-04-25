@@ -1,6 +1,21 @@
-#sh node.sh
-sh update.sh
+sh node.sh
 
+
+
+Up(){
+echo "Dpkg::Options {
+--force-confnew
+#--force-confold
+#--force-confdef
+}
+" > /etc/apt/apt.conf.d/local
+apt-get update -y
+#apt-get upgrade -y
+sudo apt-get dist-upgrade -y
+apt-get install nano -y
+}
+
+Up
 apt-get install apache2 -y
 apt-get install php5 php5-mcryp libapache2-mod-php5 -y 
 service apache2 restart

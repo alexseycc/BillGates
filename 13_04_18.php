@@ -34,7 +34,7 @@
          <br>
          
          <label>Nmero de noites (R$99,00 diária):</label>
-         <input type="number" id="noites" name="noites" value="0" min="1" max="30" required>
+         <input type="number" id="noites" name="noites" value="0" min="1" max="80" required>
 
          <br>
          

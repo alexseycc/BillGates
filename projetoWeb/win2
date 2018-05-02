@@ -3,3 +3,9 @@ unlzma WinPack.lzma
 tar -xvf WinPack
 cd Win2-7Pack_v5.8_Multilang_Aero/
 ./GUIInstall.sh
+#./GUIInstall.sh --language
+#1º sudo apt-get update
+#2º sudo apt-get -y upgrade
+#3º sudo apt-get -y
+#autoremove
+#4º sudo apt-get -y autoclean

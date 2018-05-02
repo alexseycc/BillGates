@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>xico [ Nom de domaine gratuit par AZOTE.ORG ]</title>
+<meta name="title" content="xico" />
+<meta name="description" content="tripa" />
+<meta name="keywords" content="lite" />
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+<link href="cache/redir.css" rel="stylesheet" type="text/css" />
+</head>
+<script type="text/javascript">
+redir="http://"; if(redir.indexOf('://')===-1) redir='http://'+redir; 
+window.clse = function ()
+	{
+	document.getElementById('zk').style.display='none';
+	}
+var lng = navigator.language.substr(0,2);
+if(lng!='en') lng='fr';
+
+//if(navigator.userAgent.match(/Android/i) && document.cookie.indexOf('already')==-1 && document.location.href.indexOf('asso')==-1)
+//document.write('<meta name="viewport" content="width=550px" /> <div style="position:absolute; border: 0; left:50%; top:-1px; margin-left: -256px; width:512px;  height:93px; z-index: 2;background-color:#fff; background: url(\'zoko'+lng+'.jpg\') white no-repeat;border-bottom: solid 1px #000;" id="zk"><a href="javascript:clse();" style="font-family:Verdana;font-size: 25px; font-weight:bold;color:#990000;float: right;text-decoration:none; padding: 8px 10px;">X</a><a href="https://play.google.com/store/apps/details?id=com.toofoo.zoko"  target="_blank" style="float: left; width: 470px; height:93px;text-decoration:none;">&nbsp;</a></div><iframe src="'+redir+'" style="position:absolute; border: 0; width:100%; height:100%;z-index: 1;" /></iframe>'); 
+//else
+document.write('<'+'frameset rows="*" cols="*" framespacing="0" frameborder="NO" border="0"><frame src="'+document.location.href.substr(7).replace(document.location.hostname+'/',redir)+'" scrolling="auto">'+'<'+'/'+'frameset>'); 
+
+//document.cookie = "already=1";
+</script>
+<noscript>
+<frameset rows="*" cols="*" framespacing="0" frameborder="NO" border="0"><frame src="http://" scrolling="auto"></frameset><noframes></noframes>
+</noscript>
+<nobody>
+<body>
+<div id="infos">
+<h1>xico</h1>
+<h3>Description :</h3>
+	<p>tripa</p>
+<h3>Mots clés :</h3>
+	<p>lite</p>
+<h3>Lien d'origine :</h3>
+<ul>
+	<li><a href="http://">xico</a></li>
+	<li><a href="http://lite.fr.nf">xico</a></li>
+</ul>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23394003-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</nobody>
+</html>
+<!-- cache for lite.fr.nf -->

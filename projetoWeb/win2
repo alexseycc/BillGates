@@ -1,0 +1,5 @@
+mv Win2*.lzma WinPack.lzma
+unlzma WinPack.lzma
+tar -xvf WinPack
+cd Win2-7Pack_v5.8_Multilang_Aero/
+./GUIInstall.sh

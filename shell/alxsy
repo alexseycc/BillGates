@@ -1,4 +1,6 @@
-case $1 in
+so=`cat /etc/issue | cut -d' ' -f1`
+
+case $so in
 debian|ubuntu)
 echo "
 #atualizacso sw

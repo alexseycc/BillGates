@@ -5,4 +5,21 @@
 sls
 lsl
 alx
+
+: '
+This is a test comment
+Author foo bar
+Released under GNU 
+'
+
+
+<<comentario
+nunca esqueça de comentar
+comentario
+
+
+: '
+aloha
+'
+
 echo welcome

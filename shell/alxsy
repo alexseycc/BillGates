@@ -1,4 +1,4 @@
-so=`cat /etc/issue | cut -d' ' -f1`
+so=`cat /etc/issue | cut -d' ' -f1 | head -n1 | tr [:upper:] [:lower:]`
 
 case $so in
 debian|ubuntu)

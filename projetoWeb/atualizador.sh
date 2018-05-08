@@ -8,12 +8,10 @@ echo "Dpkg::Options {
 " > /etc/apt/apt.conf.d/local
 
 
-
-< '
 up(){
 apt-get update -y
 #apt-get upgrade -y
 #sudo apt-get dist-upgrade -y
 apt-get install nano -y
 }
-'
+

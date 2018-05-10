@@ -1,4 +1,0 @@
-gd upload file.txt
-gd delete id
-gd download id
-gd update id file.txt

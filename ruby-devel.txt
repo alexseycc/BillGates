@@ -1,63 +1,0 @@
-Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
- * base: centos.unixheads.org
- * epel: mirror.sjc02.svwh.net
- * extras: mirror.keystealth.org
- * rpmfusion-free-updates: mirror.web-ster.com
- * updates: mirror.den1.denvercolo.net
- * webtatic: us-east.repo.webtatic.com
-Setting up Install Process
-Resolving Dependencies
---> Running transaction check
----> Package ruby.x86_64 0:1.8.7.374-5.el6 will be installed
---> Processing Dependency: ruby-libs = 1.8.7.374-5.el6 for package: ruby-1.8.7.374-5.el6.x86_64
---> Processing Dependency: libruby.so.1.8()(64bit) for package: ruby-1.8.7.374-5.el6.x86_64
----> Package ruby-devel.x86_64 0:1.8.7.374-5.el6 will be installed
---> Running transaction check
----> Package ruby-libs.x86_64 0:1.8.7.374-5.el6 will be installed
---> Processing Dependency: libreadline.so.5()(64bit) for package: ruby-libs-1.8.7.374-5.el6.x86_64
---> Running transaction check
----> Package compat-readline5.x86_64 0:5.2-17.1.el6 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package                 Arch          Version                Repository   Size
-================================================================================
-Installing:
- ruby                    x86_64        1.8.7.374-5.el6        base        538 k
- ruby-devel              x86_64        1.8.7.374-5.el6        base        318 k
-Installing for dependencies:
- compat-readline5        x86_64        5.2-17.1.el6           base        130 k
- ruby-libs               x86_64        1.8.7.374-5.el6        base        1.7 M
-
-Transaction Summary
-================================================================================
-Install       4 Package(s)
-
-Total download size: 2.6 M
-Installed size: 8.9 M
-Downloading Packages:
---------------------------------------------------------------------------------
-Total                                           2.1 MB/s | 2.6 MB     00:01     
-Running rpm_check_debug
-Running Transaction Test
-Transaction Test Succeeded
-Running Transaction
-  Installing : compat-readline5-5.2-17.1.el6.x86_64                         1/4 
-  Installing : ruby-libs-1.8.7.374-5.el6.x86_64                             2/4 
-  Installing : ruby-1.8.7.374-5.el6.x86_64                                  3/4 
-  Installing : ruby-devel-1.8.7.374-5.el6.x86_64                            4/4 
-  Verifying  : compat-readline5-5.2-17.1.el6.x86_64                         1/4 
-  Verifying  : ruby-1.8.7.374-5.el6.x86_64                                  2/4 
-  Verifying  : ruby-devel-1.8.7.374-5.el6.x86_64                            3/4 
-  Verifying  : ruby-libs-1.8.7.374-5.el6.x86_64                             4/4 
-
-Installed:
-  ruby.x86_64 0:1.8.7.374-5.el6       ruby-devel.x86_64 0:1.8.7.374-5.el6      
-
-Dependency Installed:
-  compat-readline5.x86_64 0:5.2-17.1.el6   ruby-libs.x86_64 0:1.8.7.374-5.el6  
-
-Complete!

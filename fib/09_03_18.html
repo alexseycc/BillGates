@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Validação de formulários em HTML5</title>
+	
+</head>
+<body>
+
+<form method="post" action="">
+    <label for="nome" oninvalid="setcustomvalidity('Somente Letras Minúsculas!')" onchange="try{setCustomValidity('')}catch(e){}">Nome: </label>
+    <input id="nome" type=text required name=nome pattern="[a-z]+$" oninvalid="setCustomValidity('Somente Letras Minúsculas!')" onchange="try{setCustomValidity('')}catch(e){}"/>
+<br />
+    <label for="email" oninvalid="setCustomValidity('Somente Letras Minúsculas!')">Email: </label>
+    <input id="email" type=text required="required" name=email pattern="[a-z]+$" oninvalid="setCustomValidity('Somente Letras Minúsculas!')" onchange="try{setCustomValidity('')}catch(e){}"/>
+<input type=submit value="OK"/>
+
+</form> 
+	<input type="submit" value="Gravar">
+
+</body>

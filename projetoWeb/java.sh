@@ -1,4 +1,4 @@
-sh atualizador.sh
+. atualizador.sh
 up
 
 #sudo add-apt-repository ppa:webupd8team/java

@@ -2,6 +2,11 @@
 script show ht do comments
 lines on lnx
 '
+
+
+. .
+source
+sh
 #or
 
 <<justComment

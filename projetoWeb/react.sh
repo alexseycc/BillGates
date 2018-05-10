@@ -1,4 +1,4 @@
-sh node.sh
+. node.sh
 #sh laravel.sh
 
 npm install -g react-native-cli

@@ -1,4 +1,4 @@
-sh atualizador.sh
+. atualizador.sh
 up
 #read -p "url:" url
 wget -c http://nodejs.org/dist/v0.12.4/node-v0.12.4.tar.gz

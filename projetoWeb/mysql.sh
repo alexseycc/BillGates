@@ -11,3 +11,4 @@ chmod 777 -R /var/www/
 service apache2 restart
 }
 
+installmysql

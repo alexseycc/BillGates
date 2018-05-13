@@ -12,16 +12,22 @@ sh mysql.sh
 #xml
 #php -m | egrep -w "openss"
 installlaravel(){
-declare -a plugins
+#declare -a plugins
+#unset plugins
 plugins=(openssl mbstring pdo tokenizer xml)
 #for i in ${plugins[@]};do ec^C $i;done;
 for i in ${!plugins[@]};
 do 
+ext=`php -m | egrep -i -w ${plugins[$i]}`
 php -m | egrep -w ${plugins[$i]}
-if [ $? -ne 0 ]; then
-echo apt-get install ${plugins[$i]} -y;
+if [ $? != 0 ]; then
+#echo apt-get install ${plugins[$i]/${plugins[$i]}/$i}:${plugins[$i]} -y;
+apt-get install php-$ext -y;
+#echo echo $ext
 fi
 done
+
+
 
 
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"

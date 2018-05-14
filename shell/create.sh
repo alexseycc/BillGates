@@ -1,7 +1,8 @@
 if [ ! -f `date +%d_%m_%y`.php ]; then
 #echo existe
 #else
+#x=1
 touch `date +%d_%m_%y`.php
 #else
-#echo existe
+#touch `date +%d_%m_%y`($x).php
 fi

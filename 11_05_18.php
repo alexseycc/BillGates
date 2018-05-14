@@ -1,4 +1,4 @@
-<form action="#" method="get">
+<form action="" method="get">
     <input type="text" name="nome" />
     <input type="submit" />
 </form>

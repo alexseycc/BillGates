@@ -1,5 +1,4 @@
 so=`cat /etc/issue | cut -d' ' -f1 | head -n1 | tr [:upper:] [:lower:]`
-
 case $so in
 debian|ubuntu)
 echo "
@@ -19,7 +18,7 @@ chmod 777 -R /home/cabox/workspace
 
 #sw  instalation
 app(){ 
-apt-get install $* -y | tee ./pckgLinux/$*.txt
+apt-get install \$* -y | tee ./pckgLinux/$*.txt
 }
 
 `cat /etc/bash.bashrc`" > /etc/bash.bashrc
@@ -38,14 +37,14 @@ echo "Dpkg::Options {
 
 
 
-< '
+
 up(){
 apt-get update -y
 #apt-get upgrade -y
 sudo apt-get dist-upgrade -y
 apt-get install nano -y
 }
-'
+
 
 
 
@@ -69,7 +68,7 @@ chmod 777 -R /home/cabox/workspace
 
 #sw  instalation
 app(){ 
-yum install $* -y | tee ./pckgLinux/$*.txt
+yum install \$* -y | tee ./pckgLinux/$*.txt
 }
 
 `cat /etc/bashrc`" > /etc/bashrc

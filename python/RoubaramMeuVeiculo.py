@@ -31,7 +31,7 @@ print"@  2-consultar    @";
 print"@                 @";
 print" @@@@@@@@@@@@@@@@@";
 opt=input();
-print "Let's talk about %s." % opt;
+print ("Let's talk about ",str(opt));
 print'\n';
 for row in consulta.fetchall():
     print row[0]

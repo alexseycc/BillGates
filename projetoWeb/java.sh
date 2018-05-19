@@ -9,3 +9,5 @@ installjava(){
 sudo apt-get install default-jdk -y
 #sudo apt-get install oracle-java7-installer
 }
+
+installjava()

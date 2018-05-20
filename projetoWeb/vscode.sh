@@ -31,16 +31,20 @@ sudo gnome-desktop-item-edit /usr/share/applications/ --create-new
 InstallCode(){
 case $os in 
 ubuntu)
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-sudo sh -c "echo 'deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main' > /etc/apt/sources.list.d/vscode.list"
-wget -q packages-microsoft-prod.deb https://packages.microsoft.com/config/ubuntu/14.04/packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-sudo apt-get install apt-transport-https
-sudo apt-get install dotnet-sdk-2.1.105
-sudo apt-get install code # or code-insiders
-sudo apt-get install libunwind libicu compat-openssl10
-sudo apt-get install dotnet-sdk-2.0.0
+#curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+#sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+#sudo sh -c "echo 'deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main' > /etc/apt/sources.list.d/vscode.list"
+#wget -q packages-microsoft-prod.deb https://packages.microsoft.com/config/ubuntu/14.04/packages-microsoft-prod.deb
+#sudo dpkg -i packages-microsoft-prod.deb
+#sudo apt-get install apt-transport-https
+#sudo apt-get install dotnet-sdk-2.1.105
+#sudo apt-get install code # or code-insiders
+#sudo apt-get install libunwind libicu compat-openssl10
+#sudo apt-get install dotnet-sdk-2.0.0
+sudo sh -c "echo 'deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ xenial main' > /etc/apt/sources.list.d/dotnetdev.list"
+sudo apt-key adv — keyserver apt-mo.trafficmanager.net — recv-keys 417A0893
+sudo apt-get update
+sudo apt-get install dotnet-dev-1.0.0-preview2–003131
 ;;
 centos)
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc

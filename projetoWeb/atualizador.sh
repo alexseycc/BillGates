@@ -12,7 +12,7 @@ up(){
 apt-get update -y
 #apt-get upgrade -y
 #sudo apt-get dist-upgrade -y
-apt-get install nano -y
+apt-get install nano bc -y
 }
 
 
